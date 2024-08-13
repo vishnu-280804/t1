@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+    background-color: #F8EDED;
+    height: 80px;
+    padding: 0px 20px;
+    width: 60%;
+    margin-left: 40vh;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+body{
+    background-color: rgb(68, 114, 127);
+}
+
+.nav-bar ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap:20px;
+    list-style-type: none;
+}
+.nav-bar ul li {
+    display: flex;
+    align-items: center; /* Centers the items vertically */
+    justify-content: space-between;
+}
+.nav-bar ul li{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    outline: none;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.imgSlider{
+    border: 2px solid black;
+    height: 600px;
+    width:80%;
+    margin-top: 30px;
+    /*margin-left: 150px;
+    
+    /*margin-right: ;*/
+    background-image: url("./test2.jpg");
+
+    background-repeat: no-repeat;
+    background-position: 0cap;
+    background-size: cover;
+    background-attachment: fixed;
+   
+    animation: changeImage 20s ease-in infinite;
+}
+@keyframes changeImage {
+    0%{
+    background-image: url("./test2.jpg");
+    }
+    25%{background-image: url("./kalki1.jpg");
+    }
+    50%{background-image:url("./oppenheimer.jfif");
+    }
+    75%{background-image: url("./maharaja.webp");
+    }
+    100%{background-image: url("./pushpa.jpg");
+    }
+}
+.container2{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bt{
+    padding: 10px;
+    color: black;
+    background-color: lightblue;
+    border:1px solid black;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.heading h1{
+    font-family: "Oswald",sans-serif;    
+    font-size: 40px;
+    margin-left: 10px;
+}
+#movies1{
+    display: flex;
+    justify-content: space-around;
+   margin-top: 20px;
+   margin-left: 15px;
+   margin-right: 15px;
+    border: 2px solid black;
+    background-image: url("./1.avif");
+    background-size: cover;
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+}
+.movie-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.container3{
+    background-color: aliceblue;
+}
+#movies2{
+    display: flex;
+    justify-content: space-around;
+   margin-top: 20px;
+   margin-left: 15px;
+   margin-right: 15px;
+    border: 2px solid black;
+    background-image: url("./2.avif");
+    background-size: cover;
+    
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+}
+#movies3{
+    display: flex;
+    justify-content: space-around;
+   margin-top: 20px;
+   margin-left: 15px;
+   margin-right: 15px;
+    border: 2px solid black;
+    background-image: url("./3.avif");
+    background-size: cover;
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+}
+#movies4{
+    display: flex;
+    justify-content: space-around;
+   margin-top: 20px;
+   margin-left: 15px;
+   margin-right: 15px;
+    border: 2px solid black;
+    background-image: url("./4.avif");
+    background-size: cover;
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+}
+#movies5{
+    display: flex;
+    justify-content: space-around;
+   margin-top: 20px;
+   margin-left: 15px;
+   margin-right: 15px;
+    border: 2px solid black;
+    background-image: url("./5.avif");
+    border-radius: 10px;
+    background-size: cover;
+    height: 300px;
+    width: 200px;
+}
+
+.lis{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: 10vh;
+    margin-top:10px;
+    margin-right: 10vh;
+    font-size: 20px;
+    font-weight: 600;
+}
+.dir-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.dir1{
+    display: flex;
+    justify-content: space-around;
+   margin-top: 20px;
+   margin-left: 15px;
+   margin-right: 15px;
+    border: 2px solid black;
+    background-image: url("./dir2.avif");
+    border-radius: 50%;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+.dir2{
+    display: flex;
+    justify-content: space-around;
+   margin-top: 20px;
+   margin-left: 15px;
+   margin-right: 15px;
+    border: 2px solid black;
+    background-image: url("./dir1.avif");
+    border-radius: 50%;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+.dir3{
+    display: flex;
+    justify-content: space-around;
+   margin-top: 20px;
+   margin-left: 15px;
+   margin-right: 15px;
+    border: 2px solid black;
+    background-image: url("./dir3.avif");
+    border-radius: 50%;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+.dir4{
+    display: flex;
+    justify-content: space-around;
+   margin-top: 20px;
+   margin-left: 15px;
+   margin-right: 15px;
+    border: 2px solid black;
+    background-image: url("./dir_.avif");
+    border-radius: 50%;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+.dir5{
+    display: flex;
+    justify-content: space-around;
+   margin-top: 20px;
+   margin-left: 15px;
+   margin-right: 15px;
+    border: 2px solid black;
+    background-image: url("./dir5.avif");
+    border-radius: 50%;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+#lis1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+}

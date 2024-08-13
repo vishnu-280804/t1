@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.game-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+button{
+    font-size: 20px;
+    background-color: aquamarine;
+    color: black;
+    font-weight: 700;
+    padding: 10px;
+   
+
+}
+.heading
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
