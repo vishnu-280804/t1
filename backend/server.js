@@ -36,3 +36,21 @@ mongoose.connect(MONGO_URI, {
 .catch(err => {
   console.error('❌ MongoDB connection error:', err)
 })
+
+app.post('/api/productivity/predict', async (req, res) => {
+  const { avgSessionDuration, totalBreakTime } = req.body;
+
+  if (avgSessionDuration == null || totalBreakTime == null) {
+    return res.status(400).json({ error: 'Missing data' });
+  }
+
+  try {
+    // Simulate a model prediction
+    const productivity = (avgSessionDuration / 3600) - (totalBreakTime / 3600);
+    
+    res.json({ productivity });
+  } catch (error) {
+    console.error('Error in productivity prediction:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});

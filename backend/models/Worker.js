@@ -1,18 +1,40 @@
-import mongoose from 'mongoose'
-
-const workerSchema = new mongoose.Schema({
-  name: String,
-  phone: String,
-  username: { type: String, unique: true },
-  password: String,
-  skills: [String],
-  photo: String,
-  isPaid: Boolean,
-  startTime: Date,
-  endTime: Date,
-  status: { type: String, enum: ['pending', 'accepted', 'rejected'], default: 'pending' },
+import mongoose from "mongoose"
+// Define the Break schema
+const breakSchema = new mongoose.Schema({
+  startTime: {
+    type: Date,
+    required: true,
+  },
+  endTime: {
+    type: Date,
+  },
 });
 
-const Worker = mongoose.model('Worker', workerSchema)
+// Define the Work Session schema
+const workSessionSchema = new mongoose.Schema({
+  startTime: {
+    type: Date,
+    required: true,
+  },
+  endTime: {
+    type: Date,
+  },
+  breaks: [breakSchema],  // Array of break times for this session
+});
 
-export default Worker
+// Define the Worker schema
+const workerSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  workHistory: [workSessionSchema],  // Array of work sessions
+  avgSessionDuration: {
+    type: Number,
+    default: 0,
+  },
+});
+
+const Worker = mongoose.model('Worker', workerSchema);
+
+export default Worker;
